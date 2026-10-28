@@ -1,40 +1,83 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="theme-auto">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#000028" />
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
+      <span class="header__rec" aria-hidden="true">REC</span>
+      <nav class="header__theme-menu" aria-label="Выбор цветовой темы">
         <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
+          <li class="header__theme-menu-item"><button type="button" class="header__theme-menu-button header__theme-menu-button_type_light">День</button></li>
+          <li class="header__theme-menu-item"><button type="button" class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>Авто</button></li>
+          <li class="header__theme-menu-item"><button type="button" class="header__theme-menu-button header__theme-menu-button_type_dark">Неон</button></li>
         </ul>
       </nav>
+      <h1 class="header__title">Сложно сосредоточиться</h1>
+      <p class="header__description title-decor">Почему так сложно сосредоточиться на чём-то важном, особенно когда вокруг столько отвлекающих вещей?</p>
     </header>
+
+    <main class="content">
+      <section class="content-section content-section_type_concentration">
+        <h2 class="content-section__title">Почему сосредоточиться так сложно</h2>
+        <div class="content-section__cards">
+          <article class="card">
+            <h3 class="card__title title-decor">Многозадачность</h3>
+            <p class="card__text">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же найти время на каждую? Попробуйте перестать искать время на «важное» и «важнейшее», а сосредоточиться на одной задаче. Например, <a class="text-link" href="https://dzen.ru/" target="_blank" rel="noopener noreferrer">вот этой</a>.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Еда</h3>
+            <p class="card__text">Один из самых отвлекающих факторов — еда. Как и любой другой ресурс, она имеет свойство заканчиваться, а значит, сигнализирует об этом нам. В результате даже сытый человек может чувствовать голод, а голодный — постоянно думать о еде.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title title-decor">Гаджеты</h3>
+            <p class="card__text">Даже самая полезная привычка может мешать сосредоточиться. Например, привычка пользоваться телефоном. Залипание в короткие видео, бесконечная лента новостей и проверка сообщений просто отнимают ваше время и внимание.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section content-section_type_tips">
+        <h2 class="content-section__title">Что помогает сосредоточиться</h2>
+        <div class="content-section__cards">
+          <article class="card"><h3 class="card__title title-decor">Правильное питание</h3><p class="card__text">Важно найти золотую середину между перееданием и недостаточным количеством еды. Питание должно быть разнообразным, а рацион — сбалансированным. Тогда мозг получает достаточно энергии, чтобы продуктивно работать.</p></article>
+          <article class="card"><h3 class="card__title title-decor">Прогулки</h3><p class="card__text">Ничто так не помогает перезагрузиться, как прогулка на свежем воздухе. Можно совместить её с лёгкой физической нагрузкой: пройтись быстрым шагом или сделать несколько упражнений. Это помогает снять напряжение и вернуть внимание к делам.</p></article>
+          <article class="card"><h3 class="card__title title-decor">Меньше уведомлений</h3><p class="card__text">Постоянные уведомления заставляют переключать внимание и мешают погрузиться в задачу. Отключите всё лишнее на время работы, оставив только действительно важные сообщения. Так будет проще сохранить концентрацию.</p></article>
+        </div>
+      </section>
+
+      <section class="content-section content-section_type_advices">
+        <h2 class="content-section__title">Как концентрироваться лучше</h2>
+        <div class="content-section__cards">
+          <article class="card"><h3 class="card__title card__title_type_regular title-decor">Представьте не результат, а процесс</h3><p class="card__text">Вместо того чтобы думать о грандиозном результате, попробуйте представить шаги, которые приведут к нему. Разбейте большую задачу на небольшие этапы и сосредоточьтесь на следующем действии. Так путь к цели становится понятнее, а начать проще.</p></article>
+          <article class="card"><h3 class="card__title card__title_type_regular title-decor">Уходите с головой в проблемы</h3><p class="card__text">Парадоксальный совет, но иногда стоит полностью погрузиться в сложную задачу. Не пытайтесь одновременно решить всё и сразу: выделите время, уберите отвлекающие факторы и дайте себе возможность спокойно подумать.</p></article>
+          <article class="card"><h3 class="card__title card__title_type_regular title-decor">Практикуйте «маленькие» задачи</h3><p class="card__text">Большие планы могут пугать своим масштабом. Начните с простого действия, которое можно выполнить за несколько минут. Завершённая маленькая задача даёт ощущение движения вперёд и помогает перейти к следующей.</p></article>
+        </div>
+      </section>
+
+      <section class="gallery" aria-label="Галерея изображений">
+        <h2 class="visually-hidden">Галерея изображений</h2>
+        <img class="gallery__image gallery__image_sunset" src="./images/sunset.png" alt="Яркий закат над горизонтом" loading="lazy" />
+        <img class="gallery__image gallery__image_ice-cream" src="./images/ice-cream.png" alt="Розовое мороженое крупным планом" loading="lazy" />
+        <img class="gallery__image gallery__image_tape" src="./images/tape.png" alt="Аудиокассета на цветном фоне" loading="lazy" />
+        <img class="gallery__image gallery__image_books" src="./images/books.png" alt="Стопка книг" loading="lazy" />
+        <img class="gallery__image gallery__image_street" src="./images/street.png" alt="Городская улица" loading="lazy" />
+      </section>
+    </main>
+    <footer class="footer decorated-zone"><h2 class="footer__title">Сосредоточься</h2></footer>
   </body>
 </html>

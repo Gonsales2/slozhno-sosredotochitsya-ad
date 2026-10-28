@@ -11,7 +11,9 @@
   --menu-color: #353430;
   --button-hover: rgb(50 49 45 / 0.4);
 }
-:root.theme-light .header__rec { display: none; }
+:root.theme-light .header__rec {
+  display: none;
+}
 @media (prefers-color-scheme: light) {
   :root.theme-auto {
     color-scheme: light;
@@ -26,5 +28,7 @@
     --menu-color: #353430;
     --button-hover: rgb(50 49 45 / 0.4);
   }
-  :root.theme-auto .header__rec { display: none; }
+  :root.theme-auto .header__rec {
+    display: none;
+  }
 }

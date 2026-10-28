@@ -11,7 +11,11 @@
   --menu-color: #ff0070;
   --button-hover: rgb(255 0 112 / 0.4);
 }
-:root.theme-dark .header__rec { display: flex; }
+
+:root.theme-dark .header__rec { 
+  display: flex;
+
+}
 @media (prefers-color-scheme: dark) {
   :root.theme-auto {
     color-scheme: dark;
@@ -26,5 +30,7 @@
     --menu-color: #ff0070;
     --button-hover: rgb(255 0 112 / 0.4);
   }
-  :root.theme-auto .header__rec { display: flex; }
+  :root.theme-auto .header__rec {
+    display: flex;
+  }
 }
